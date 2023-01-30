@@ -155,7 +155,8 @@ body {
 }
 
 @media (max-width:767px) {
-    .nav-link{
+    .nav-link,
+    .dropdown-item{
         font-size:18px;
     }
 }
