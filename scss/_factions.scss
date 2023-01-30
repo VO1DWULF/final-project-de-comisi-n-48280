@@ -1,0 +1,60 @@
+.factions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 1rem;
+    padding-top: 2rem;  
+}
+
+.factions2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding-right: 2rem;
+}
+
+.factimg1 {
+    transition: 0.5s;
+    width: 20%;
+}
+
+
+.factdesc1 {
+    inline-size: 43%;
+    padding-top: 4rem;
+    justify-content: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.factions:hover .factdesc1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.factimg2 {
+    width: 20%;
+    transition: 0.5s;
+}
+
+.factimg1:hover{
+    transform: scale(1.1);
+}
+
+.factions2:hover .factdesc1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.factimg2:hover {
+    transform: scale(1.1);
+}
+
+.factdesc1 {
+    font-style: italic;
+    font-size: x-large;
+}

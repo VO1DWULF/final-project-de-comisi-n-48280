@@ -1,0 +1,103 @@
+.store-items {
+    margin-top: 3rem;
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.cardstore {
+    --bs-card-bg:rgba(0, 225, 255,0.5);
+    border-radius: 15px;
+}
+
+.storebody {
+    background-color:rgba(24, 45, 75,0.9);
+    border-radius: 15px;
+}
+
+.storebtn {
+    background-color:rgba(88, 0, 189, 0.4);
+    color: #00e1ff;
+}
+
+.titlecard {
+    text-align: center;
+    color: #00e1ff;
+}
+
+#clothing,
+#collectibles,
+#gaming,
+#all {
+    display: none;
+}
+
+.filtro{
+    display: flex;
+}
+
+.filtro:hover {
+    cursor: pointer;
+    color:#00e1ff;
+    transition: 0.5s;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cardpc,
+.cardcollect,
+.cardcloth {
+    display: none;
+}
+
+#clothing:checked ~ .cards-container .cardcloth,
+#collectibles:checked ~ .cards-container .cardcollect,
+#gaming:checked ~ .cards-container .cardpc {
+    display: flex;
+}
+
+#all:checked ~ .cards-container .cardcloth,
+#all:checked ~ .cards-container .cardcollect,
+#all:checked ~ .cards-container .cardpc {
+    display: flex;
+}
+
+@media (min-width:768px) {
+    .store-items{
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+    }
+    .options-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 1rem;
+        justify-content: center;
+        font-size: 22px;
+    }
+}
+
+@media (min-width:1024px) {
+    .store-items{
+        grid-template-columns:repeat(3,1fr);
+        gap: 3rem;
+    }
+    .options-container {
+        gap: 3rem;
+        margin-top: 1rem;
+        font-size: 24px;
+    }
+}
+
+@media (min-width:1200px) {
+    .store-items{
+        grid-template-columns:repeat(4,1fr);
+        gap: 3rem;
+    }
+}

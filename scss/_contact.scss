@@ -1,0 +1,125 @@
+.inputform2, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.grid-containercontact {
+    padding: 1rem;
+}
+
+.inputform {
+    background-color:rgba(25, 45, 75,0.8);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.inputform:hover {
+    background-color:#00e1ff;
+    transition: 0.5s;
+}
+
+#form3 {
+    display:flex;
+    justify-content:center;
+    border-style:solid;
+    gap:2rem;
+}
+
+.container-form {
+    border-radius: 5px;
+    background-color: rgba(24, 45, 75,0.6);
+    padding:20px;
+}
+
+.form1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.form2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.filaform:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.formulario {
+    margin-bottom: 1rem;
+}
+
+
+
+.acordbtn {
+    background-color:#15386d;
+    color: #f8b700;
+    text-shadow: 4px 4px 8px #000000;
+    font-size: 18px;
+}
+
+.acordbtn:not(.collapsed) {
+    background-color:#192D4B;
+    color: white;
+}
+
+.acordbdy {
+    color: white;
+    background-color: #192D4B;
+}
+
+.acord {
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-width:1px;
+    margin-top:1rem;
+}
+
+@media (max-width: 767px) {
+    .form1, .form2, .inputform {
+    width: 100%;
+    margin-top: 0;
+    }
+
+}
+
+@media (min-width:768px){
+    .acordbtn {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:992px){
+    .formulario {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:4rem;
+        margin-bottom: 3rem;
+    }
+
+    .gridmap {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+}
+
+@media (min-width:1920px) {
+    .gridmap{
+        width: 750px;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    
+}

@@ -1,0 +1,31 @@
+.alliance{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+.horde{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 2rem;
+    text-align: justify;
+
+}
+
+.description {
+    inline-size: 50%;
+    background-color: rgba(6, 93, 216, 0.3);
+    padding: 1rem;
+    border-style: ridge;
+    border-color: rgba(6, 93, 216, 0.5);
+}
+
+.descriptionh {
+    inline-size: 50%;
+    background-color: rgba(240, 5, 5, 0.3);
+    padding: 1rem;
+    border-style: ridge;
+    border-color: rgba(240, 5, 5, 0.5);
+}
