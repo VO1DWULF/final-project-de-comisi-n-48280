@@ -16,15 +16,15 @@
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    background-color:rgba(24, 45, 75,0.8);
+    background-color:$primary-color;
     --bs-gutter-x: 0;
 }
 
 .nav-link {
-    color: white;
+    color: $tertiary-color;
     font-weight: bolder;
     font-size: 30px;
-    font-family: 'Crimson Pro', serif;
+    font-family: $mainfont;
 }
 
 
@@ -32,20 +32,20 @@
     --bs-dropdown-bg:none;
     --bs-dropdown-border-color:none;
     --bs-dropdown-link-hover-color: #00e1ff;
-    --bs-dropdown-link-hover-bg: rgba(24, 45, 75,0.8);
+    --bs-dropdown-link-hover-bg: rgba(28, 43, 74, 0.8);
     --bs-dropdown-link-active-color: #00e1ff;
-    --bs-dropdown-link-active-bg: rgba(24, 45, 75,0.8);
+    --bs-dropdown-link-active-bg: rgba(28, 43, 74, 0.8);
 }
 
 .dropdown-item {
     background-color:none;
     font-weight: bolder;
-    color: white;
+    color: $tertiary-color;
     font-size: 25px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    --bs-dropdown-link-active-bg:rgba(24, 45, 75,0.8);
+    --bs-dropdown-link-active-bg:rgba(28, 43, 74, 0.8);
 }
 
 .navbar-toggler {
@@ -65,13 +65,13 @@
 }
 
 a {
-    color: white;
+    color: $tertiary-color;
     text-decoration: none;
-}
 
-a:hover {
-    color: #00e1ff;
-    cursor: pointer;
+    &:hover{
+        color: #00e1ff;
+        cursor: pointer;
+    }
 }
 
 a:active {
@@ -82,7 +82,7 @@ a:active {
     display: none;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: $tertiary-color;
     padding: 1rem;
     text-align: center;
     font-size: larger;
@@ -100,7 +100,7 @@ h1 {
     flex-direction: column;
     margin-top: 6rem;
     align-items: center;
-    color: white;
+    color: $tertiary-color;
     padding: 1rem;
     text-align: center;
     text-shadow: 4px 4px 8px #000000;
@@ -108,20 +108,20 @@ h1 {
 
 h2 {
     font-weight: bold;
-    color: white;
+    color: $tertiary-color;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
 }
 
 h3 {
     font-weight: bold;
-    color: #f8b700;
+    color: $quaternary-color;
     text-align: center;
 }
 
 h4 {
     font-weight: bold;
-    color: #00e1ff;
+    color: $secondary-color;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -132,9 +132,9 @@ body {
     background-position: center;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    font-family: 'Crimson Pro', serif;
+    font-family: $mainfont;
     font-size: large;
-    color: white;
+    color: $tertiary-color;
     
 }
 
@@ -152,7 +152,14 @@ body {
 
 footer {
     text-align: center;
-    color: white;
+    color: $tertiary-color;
     font-size: larger;
     margin-top: 5rem;
 }
+
+.pageitems {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+

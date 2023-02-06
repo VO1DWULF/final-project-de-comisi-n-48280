@@ -1,0 +1,39 @@
+/*color scheme*/
+$primary-color: rgba(28, 43, 74, 0.8);
+$secondary-color: #00e1ff;
+$tertiary-color: white;
+$quaternary-color:#f8b700;
+
+
+/*screen sizes*/
+$mobile:767px;
+$tablet: 768px;
+$smalldesk:992px;
+$laptop:1024px;
+$large:1200px;
+$xlarge:1920px;
+
+/*fonts*/
+$mainfont: 'Crimson Pro', serif;
+
+
+/*mixin*/
+@mixin textformat {
+    text-align: justify;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+@mixin containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin pageitems {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+
+

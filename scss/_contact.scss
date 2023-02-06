@@ -1,8 +1,8 @@
 .inputform2, select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
     resize: vertical;
 }
 
@@ -11,18 +11,18 @@
 }
 
 .inputform {
-    background-color:rgba(25, 45, 75,0.8);
-    color: white;
+    background-color:$primary-color;
+    color: $tertiary-color;
     padding: 12px 20px;
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     cursor: pointer;
     float: right;
-}
 
-.inputform:hover {
-    background-color:#00e1ff;
-    transition: 0.5s;
+    &:hover {
+        background-color:$secondary-color;
+        transition: 0.5s;
+    }
 }
 
 #form3 {
@@ -62,21 +62,43 @@
 }
 
 
+.btncontact{
+    @extend .pagesbtn;
+    margin-bottom: 5px;
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+.btncontact2{
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+
+.pagesbtn {
+    background-color:rgba(88, 0, 189, 0.4);
+    
+    &:hover{
+        background-color: $secondary-color;
+        color: $tertiary-color;
+    }
+    }
+
 
 .acordbtn {
+    @include textformat;
     background-color:#15386d;
-    color: #f8b700;
-    text-shadow: 4px 4px 8px #000000;
+    color: $quaternary-color;
     font-size: 18px;
 }
 
 .acordbtn:not(.collapsed) {
     background-color:#192D4B;
-    color: white;
+    color: $tertiary-color;
 }
 
 .acordbdy {
-    color: white;
+    color: $tertiary-color;
     background-color: #192D4B;
 }
 
@@ -86,7 +108,7 @@
     margin-top:1rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
     .form1, .form2, .inputform {
     width: 100%;
     margin-top: 0;
@@ -94,13 +116,21 @@
 
 }
 
-@media (min-width:768px){
-    .acordbtn {
+@media (min-width:$tablet){
+    .acordbtn,.btncontact,.btncontact2 {
         font-size: 20px;
+    }
+
+    .btncontact {
+        margin-bottom: 0;
+    }
+
+    .btncontact2{
+        margin-right: 20px;
     }
 }
 
-@media (min-width:992px){
+@media (min-width:$smalldesk){
     .formulario {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -115,7 +145,7 @@
 
 }
 
-@media (min-width:1920px) {
+@media (min-width:$xlarge) {
     .gridmap{
         width: 750px;
         margin-top: 3rem;

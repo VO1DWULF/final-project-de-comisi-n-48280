@@ -14,20 +14,20 @@
     display: none;
 }
 
-@media (max-width:767px) {
+@media (max-width:$mobile) {
     .nav-link,
     .dropdown-item{
         font-size:18px;
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:$tablet) {
     .video {
         height: 480px;
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:$smalldesk) {
     body {
         background-image: url(../img/wallpaper.jpg);
     }
@@ -46,7 +46,7 @@
         margin-top: 18rem;
     }
     .dropdown-item {
-        background-color:rgba(24, 45, 75,0.8);
+        background-color:$primary-color;
     }
     .medias {
         display: none;
@@ -75,7 +75,7 @@
         align-content: flex-start;
         align-self: flex-start;
         inline-size: 40%;
-        border: #fff;
+        border: $tertiary-color;
         border-style: hidden;
         position: absolute;
         right: 1rem;
@@ -91,33 +91,33 @@
     }
     
     .featdesc1 {
+        @include textformat;
         position:absolute;
         bottom: 0;
         margin: 1rem;
-        text-align:justify;
-        color: white;
+        color: $tertiary-color;
         font-size: 18px;
-        text-shadow: 2px 2px 4px #000000;
         visibility: hidden;
         opacity: 0;
         transition: opacity .2s, visibility .2s;
         }
     
-    .feat1:hover .featdesc1 {
-        visibility: visible;
-        opacity: 1;
+    .feat1:hover {
+        &  .featdesc1{
+            visibility: visible;
+            opacity: 1;
+        }
     }
     
     .ft {
-        text-align: justify;
-        color: white;
-        text-shadow: 4px 4px 8px #000000;
+        @include textformat;
+        color: $tertiary-color;
     }
 
     .ft2 {
-        text-align: center;
+        @include textformat;
         font-size: 30px;
-        text-shadow: 4px 4px 8px #000000;
+
     }
 
     .updates-desk {
@@ -126,7 +126,7 @@
         inline-size: 50%;
         text-align: justify;
         text-shadow: 2px 2px 4px #000000;
-        color: white;
+        color: $tertiary-color;
         font-size: 24px;
         margin-left: 1rem;
         padding-left: 1rem;
@@ -157,7 +157,7 @@
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width:$laptop) {
 
     #title{
         margin-top: 18rem;
@@ -167,7 +167,7 @@
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:$large) {
     .features-desk {
         top: 52rem;
     }
@@ -185,7 +185,7 @@
     font-size: 20px;
 }
 
-@media (min-width:1920px){
+@media (min-width:$xlarge){
     .features-desk {
         margin-top: 11rem;
     }
@@ -198,7 +198,7 @@
 .features {
     display: flex;
     text-align: center;
-    color: white;
+    color: $tertiary-color;
     text-shadow: 2px 2px 4px #000000;
     padding: 1rem;
 }
@@ -209,28 +209,28 @@
     font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
     font-size: 1.4rem;
-    color: #f8b700;
-    background-color: rgba(28, 43, 74, 0.8);
+    color: $quaternary-color;
+    background-color: $primary-color;
     margin: 1rem;
-    --bs-btn-color: #fff;
-    --bs-btn-bg: rgba(28, 43, 74, 0.8);
-    --bs-btn-border-color: rgba(28, 43, 74, 0.8);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: rgba(28, 43, 74, 0.8);
-    --bs-btn-hover-border-color: rgba(28, 43, 74, 0.8);
+    --bs-btn-color: $tertiary-color;
+    --bs-btn-bg: $primary-color;
+    --bs-btn-border-color: $primary-color;
+    --bs-btn-hover-color: $tertiary-color;
+    --bs-btn-hover-bg: $primary-color;
+    --bs-btn-hover-border-color: $primary-color;
     --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: rgba(28, 43, 74, 0.8);
-    --bs-btn-active-border-color: rgba(28, 43, 74, 0.8);
+    --bs-btn-active-color: $tertiary-color;
+    --bs-btn-active-bg: $primary-color;
+    --bs-btn-active-border-color: $primary-color;
     --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: rgba(28, 43, 74, 0.8);
+    --bs-btn-disabled-color: $tertiary-color;
+    --bs-btn-disabled-bg: $primary-color;
     --bs-btn-disabled-border-color: rgba(28, 43, 74, 0.8);
 }
 
 .card-body {
     background-color: rgba(28, 43, 74, 0.6);
-    color:white;
+    color:$tertiary-color;
     list-style: square;
     text-shadow: 2px 2px 4px #000000;
     margin: 1rem;
