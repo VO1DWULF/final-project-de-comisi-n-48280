@@ -1,28 +1,54 @@
 .north {
     @include containers;
-    &nortext{
-        @include textformat;
-    }
+    text-align: center;
+    padding: 1rem;
 }
 
 .location-container{
     @include pageitems;
+    padding: 1rem;
 }
 
 .locard {
     @extend .storebody;
 }
 
-@media (max-width:$mobile){
+.bodyloc,.locimg {
+    @extend .storebody;
+}
+@media (max-width:$tablet){
     .locgroup{
         display: grid;
     }
 }
 
-@media (min-width:768px){
+@media (min-width:$tablet){
+    .north{
+        font-size: 22px;
+    }
+    .location-container{
+        gap: 3rem;
+    }
+}
+
+@media (min-width:$smalldesk){
     .location-container{
         display: flex;
         flex-wrap: wrap;
+        gap: 6rem;
+    }
+    .north {
+        font-size: 25px;
+    }
+
+    .bodyloc {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:$xlarge){
+    .bodyloc {
+        font-size: 22px;
     }
 }
 
