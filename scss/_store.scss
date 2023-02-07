@@ -1,5 +1,5 @@
 .store-items {
-    @include pageitems;
+    @extend .pageitems;
     margin-top: 3rem;
 }
 

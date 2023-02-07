@@ -133,7 +133,7 @@ footer {
   font-size: larger;
   margin-top: 5rem; }
 
-.pageitems {
+.pageitems, .store-items {
   display: grid;
   justify-items: center;
   gap: 2rem; }
@@ -342,8 +342,11 @@ footer {
   inline-size: 43%;
   padding-top: 4rem;
   justify-content: center;
+  font-style: italic;
+  font-size: 25px;
   text-align: justify;
-  text-shadow: 10px 10px 10px black;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 1rem;
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s; }
@@ -366,7 +369,7 @@ footer {
 .factimg2:hover {
   transform: scale(1.1); }
 
-.factdesc1, .factdesc2 {
+.factdesc2 {
   font-style: italic;
   font-size: 20px;
   text-align: justify;
@@ -754,9 +757,6 @@ footer {
     font-size: 22px; } }
 
 .store-items {
-  display: grid;
-  justify-items: center;
-  gap: 2rem;
   margin-top: 3rem; }
 
 .cardstore {
