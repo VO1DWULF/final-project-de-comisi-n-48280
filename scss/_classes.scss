@@ -39,22 +39,7 @@
 
 
 .spec12 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 50%;
+    @extend .spec11;
 }
 
 .spec2:hover .spec12 {
@@ -73,22 +58,7 @@
 
 
 .spec13 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 50%;
+    @extend .spec11;
 }
 
 .spec3:hover .spec13 {
@@ -106,22 +76,7 @@
 }
 
 .spec14 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 50%;
+    @extend .spec11;
 }
 
 .spec4:hover .spec14 {
@@ -138,22 +93,7 @@
 }
 
 .spec15 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 50%;
+@extend .spec11;
 }
 
 .spec5:hover .spec15 {
@@ -211,23 +151,7 @@
 }
 
 .spec17 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    margin: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 76%;
+    @extend.spec16;
 }
 
 .spec7:hover .spec17 {
@@ -245,23 +169,7 @@
 }
 
 .spec18 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    margin: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 76%;
+    @extend.spec16;
 }
 
 .spec8:hover .spec18 {
@@ -279,23 +187,7 @@
 }
 
 .spec19 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    margin: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 76%;
+    @extend.spec16;
 }
 
 .spec9:hover .spec19 {
@@ -313,23 +205,7 @@
 }
 
 .spec20 {
-    display: inline-block;
-    position: absolute;
-    align-items: center;
-    text-align:justify;
-    text-shadow: 10px 10px 10px black;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s, visibility .2s;
-    background-color:$primary-color;;
-    border-style: ridge;
-    border-color: #192D4B;
-    padding: 1rem;
-    margin: 1rem;
-    inline-size: 60%;
-    list-style-type:circle;
-    left: 15%;
-    top: 76%;
+    @extend.spec16;
 }
 
 .spec10:hover .spec20 {
@@ -343,5 +219,4 @@
 
 .specimg10:hover {
     transform: scale(1.2);
-
 }

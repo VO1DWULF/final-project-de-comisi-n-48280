@@ -428,7 +428,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center; }
 
-.spec11 {
+.spec11, .spec12, .spec13, .spec14, .spec15 {
   display: inline-block;
   position: absolute;
   align-items: center;
@@ -446,7 +446,7 @@ footer {
   left: 15%;
   top: 50%; }
 
-.spec1:hover .spec11 {
+.spec1:hover .spec11, .spec1:hover .spec12, .spec1:hover .spec13, .spec1:hover .spec14, .spec1:hover .spec15 {
   visibility: visible;
   opacity: 1; }
 
@@ -455,24 +455,6 @@ footer {
 
 .specimg1:hover {
   transform: scale(1.2); }
-
-.spec12 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 50%; }
 
 .spec2:hover .spec12 {
   visibility: visible;
@@ -484,24 +466,6 @@ footer {
 .specimg2:hover {
   transform: scale(1.2); }
 
-.spec13 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 50%; }
-
 .spec3:hover .spec13 {
   visibility: visible;
   opacity: 1; }
@@ -512,24 +476,6 @@ footer {
 .specimg3:hover {
   transform: scale(1.2); }
 
-.spec14 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 50%; }
-
 .spec4:hover .spec14 {
   visibility: visible;
   opacity: 1; }
@@ -539,24 +485,6 @@ footer {
 
 .specimg4:hover {
   transform: scale(1.2); }
-
-.spec15 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 50%; }
 
 .spec5:hover .spec15 {
   visibility: visible;
@@ -574,7 +502,7 @@ footer {
   justify-content: center;
   padding-top: 2rem; }
 
-.spec16 {
+.spec16, .spec17, .spec18, .spec19, .spec20 {
   display: inline-block;
   position: absolute;
   align-items: center;
@@ -593,7 +521,7 @@ footer {
   left: 15%;
   top: 76%; }
 
-.spec6:hover .spec16 {
+.spec6:hover .spec16, .spec6:hover .spec17, .spec6:hover .spec18, .spec6:hover .spec19, .spec6:hover .spec20 {
   visibility: visible;
   opacity: 1; }
 
@@ -602,25 +530,6 @@ footer {
 
 .specimg6:hover {
   transform: scale(1.2); }
-
-.spec17 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  margin: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 76%; }
 
 .spec7:hover .spec17 {
   visibility: visible;
@@ -632,25 +541,6 @@ footer {
 .specimg7:hover {
   transform: scale(1.2); }
 
-.spec18 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  margin: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 76%; }
-
 .spec8:hover .spec18 {
   visibility: visible;
   opacity: 1; }
@@ -661,25 +551,6 @@ footer {
 .specimg8:hover {
   transform: scale(1.2); }
 
-.spec19 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  margin: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 76%; }
-
 .spec9:hover .spec19 {
   visibility: visible;
   opacity: 1; }
@@ -689,25 +560,6 @@ footer {
 
 .specimg9:hover {
   transform: scale(1.2); }
-
-.spec20 {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  text-align: justify;
-  text-shadow: 10px 10px 10px black;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  background-color: rgba(28, 43, 74, 0.8);
-  border-style: ridge;
-  border-color: #192D4B;
-  padding: 1rem;
-  margin: 1rem;
-  inline-size: 60%;
-  list-style-type: circle;
-  left: 15%;
-  top: 76%; }
 
 .spec10:hover .spec20 {
   visibility: visible;
