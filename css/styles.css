@@ -398,12 +398,14 @@ footer {
 
 .alliance {
   display: flex;
+  flex-wrap:wrap;
   flex-direction: row;
   align-items: center;
   text-align: justify; }
 
 .horde {
   display: flex;
+  flex-wrap:wrap;
   flex-direction: row-reverse;
   align-items: center;
   padding-right: 2rem;
