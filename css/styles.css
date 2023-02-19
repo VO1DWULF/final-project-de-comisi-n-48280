@@ -398,6 +398,7 @@ footer {
 
 .alliance {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   text-align: justify;
@@ -405,6 +406,7 @@ footer {
 
 .horde {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: center;
   text-align: justify;
