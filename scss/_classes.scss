@@ -16,6 +16,7 @@
     background-color:$primary-color;;
     border-style: ridge;
     border-color: #192D4B;
+    border-radius: 20px;
     padding: 1rem;
     inline-size: 60%;
     list-style-type:circle;
@@ -128,8 +129,10 @@
     background-color:$primary-color;;
     border-style: ridge;
     border-color: #192D4B;
+    border-radius: 20px;
     padding: 1rem;
     margin: 1rem;
+    margin-top: 8rem;
     inline-size: 60%;
     list-style-type:circle;
     left: 15%;
@@ -220,3 +223,77 @@
 .specimg10:hover {
     transform: scale(1.2);
 }
+
+@media (max-width:$mobile){
+    .spec11{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        inline-size: fit-content;
+        margin-right: 1rem;
+        margin-left: -2rem;
+        margin-top: 5rem;
+
+    }
+    .spec12{
+        margin-top: 20rem;
+    }
+    .spec13{
+        margin-top: 35rem;
+    }
+    .spec14{
+        margin-top: 52rem;
+    }
+    .spec15{
+        margin-top: 68rem;
+    }
+    .spec16{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        inline-size: fit-content;
+        margin-right: 1rem;
+        margin-left: -2rem;
+        margin-top: 75rem;
+    }
+    .spec17{
+        margin-top: 90rem;
+    }
+    .spec18{
+        margin-top: 107rem;
+    }
+    .spec19{
+        margin-top: 123rem;
+    }
+    .spec20{
+        margin-top: 138rem;
+    }
+}
+
+@media (min-width:$tablet){
+
+    .spec11{
+        margin-top: 5rem;
+    }
+    .spec14,.spec15{
+        margin-top: 20rem;
+    }
+    .spec16{
+        margin-top: 27rem;
+    }
+    .spec19,.spec20{
+        margin-top: 43rem;
+    }
+}
+
+@media (min-width:$large){
+    .spec11{
+        margin-top: 3rem;
+    }
+    .spec16{
+        margin-top: 7rem;
+    }
+}
+
+
+

@@ -1,17 +1,19 @@
 .alliance{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     text-align: justify;
+    padding: 1rem;
 }
 
 .horde{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
-    padding-right: 2rem;
     text-align: justify;
-
+    padding: 1rem;
 }
 
 .description {
@@ -20,6 +22,7 @@
     padding: 1rem;
     border-style: ridge;
     border-color: rgba(6, 93, 216, 0.5);
+    border-radius: 20px;
 }
 
 .descriptionh {
@@ -28,4 +31,19 @@
     padding: 1rem;
     border-style: ridge;
     border-color: rgba(240, 5, 5, 0.5);
+    border-radius: 20px;
+}
+
+@media (max-width:$mobile){
+    .description,.descriptionh{
+        inline-size: 100%;
+        justify-content: center;
+    }
+    }
+
+@media (min-width:$tablet) {
+    .horde{
+        padding-right: 2rem;
+    }
+    
 }
